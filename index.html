@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="converter">
+      <h1>Currency Converter</h1>
+      <div class="input-container">
+        <label for="fromCurrency">From:</label>
+        <select id="fromCurrency"></select>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount" />
+      </div>
+      <div class="input-container">
+        <label for="toCurrency">To:</label>
+        <select id="toCurrency"></select>
+        <button onclick="convertCurrency()">Convert</button>
+      </div>
+      <p id="result">Result:</p>
+      <!-- Additional HTML elements without comments -->
+      <div class="additional-content">
+        <h2>Additional Information</h2>
+        <p>
+          This is a currency converter tool that allows you to convert between
+          different currencies.
+        </p>
+        <p>
+          Choose the currency you want to convert from and to, enter the amount,
+          and click the "Convert" button to get the result.
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
